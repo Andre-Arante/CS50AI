@@ -244,7 +244,7 @@ class MinesweeperAI():
                     continue
                 
                 if K.cells.issubset(New_Knowledge.cells):
-                    # finds set difference (removes duplicates between sentence and new knowledge cells)
+                    # finds set difference (removes duplicates between model and new knowledge cells)
                     set_diff = New_Knowledge.cells - K.cells
                     count_diff = abs(K.count - New_Knowledge.count)
 
